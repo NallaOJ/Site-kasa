@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  position: relative;
+  height: 209px;
+  align-items: center;
+  align-content: center;
+}
+
+.logo-footer {
+ padding-left: 47%;
+}
+
+.footer p {
+  color: white;
+  display: flex;
+  justify-content: center;
+}

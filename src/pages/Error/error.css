@@ -1,0 +1,12 @@
+.main-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  width: 597px;
+  height: 263px;
+font-size:288px;
+padding: 50px;
+}

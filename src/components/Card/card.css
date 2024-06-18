@@ -1,0 +1,25 @@
+.card-cover {
+  position: relative; 
+  width: 500px;
+  height: 340px;
+}
+
+.card-cover img {
+  position: absolute;
+  width: 500px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+.card-name {
+  position: absolute;
+  font-weight: bold;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 25.67px;
+  bottom: 20px;
+  left: 15px ;
+}
