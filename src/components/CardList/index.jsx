@@ -1,10 +1,11 @@
 import React from 'react';
-import { logementsList } from '../../Datas/logements';
-import Card from '../Card'
+import logements from '../../Datas/logement.json';
+import Card from '../../components/Card'
 import './cardlist.css'
 
+
 function CardList() {
-  const categories = logementsList.reduce(
+  const categories = logements.reduce(
     (acc, logement) => 
       acc.includes(logement.category) ? acc : acc.concat(logement.category), []
   );
@@ -17,7 +18,7 @@ function CardList() {
         ))}
       </ul>
       <ul className="logements-list">
-        {logementsList.map(({ id, cover, title }) => (
+        {logements.map(({ id, cover, title }) => (
           <Card 
              key={id}
               cover={cover}

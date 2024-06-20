@@ -1,7 +1,9 @@
 import React from 'react';
 import BannerImage1 from '../../assets/banner-image1.png';
-import CardList from '../../components/CardList';
+import Card from '../../components/Card';
 import './home.css'
+import logementList from '../../Datas/logement.json'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -10,7 +12,15 @@ const Home = () => {
      <p className="banner-text">
         Chez vous, partout et ailleurs</p>
      </div>
-    <CardList />
+     <section className='section-logment'>
+     <div className='logement-container'>
+      {logementList.map((logement) => (
+        <Link to={`/logement/${logement.id}`} key={logement.id}>
+      <Card pictures={logement.cover} title={logement.title} />
+      </Link>
+      ))}
+    </div>
+    </section>
     </div>
   )
 };

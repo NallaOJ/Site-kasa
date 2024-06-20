@@ -1,5 +1,8 @@
 .details-logement {
-  background-color: aqua;
+  background-color: violet;
+  width: 1240px;
+height: 228px;
+padding-bottom: 50px;
 }
 
 .info-logement {

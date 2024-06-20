@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Error from './pages/Error';
@@ -9,7 +9,7 @@ import Logement from './pages/Logement';
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 };
 

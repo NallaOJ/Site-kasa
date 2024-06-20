@@ -1,16 +1,10 @@
 import './card.css';
-import { useNavigate } from 'react-router-dom';
 
-function Card({ id, title, cover }) {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(`/logement/${id}`);
-  };
+function Card({ title, pictures }) {
 
   return (
-    <div className="card-cover" data-id={id} onClick={handleClick}>
-      <img src={cover} alt={`${title} cover`} />
+    <div className="card-cover">
+      <img src={pictures} alt='' />
       <div className="card-name">
         {title}
       </div>

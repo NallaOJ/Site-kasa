@@ -1,10 +1,11 @@
+import React from 'react'
 import './detailsLogement.css'
-import { logementsList } from '../../Datas/logements'
+import logements from '../../Datas/logement.json'
 
 
-function DetailsLogement(logementsList) {
+function DetailsLogement(logements) {
 
-  const { title, description, host, rating, location, equipments, tags } = logementsList
+  const { title, description, host, rating, location, equipments, tags } = logements
 
   return (
 <div className='details-logement'>
