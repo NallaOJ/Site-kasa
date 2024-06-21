@@ -1,38 +1,36 @@
 import React, { useState } from 'react';
-import { CollapseContent } from '../../Datas/collapse';
-import button from '../../assets/button.png'
-import './collapse.css'
+import collapseup from '../../assets/collapseup.png';
+import collapsedown from '../../assets/collapsedown.png';
+import './collapse.css';
 
-function CollapseList() {
+function Collapse({ title, content, isList }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = (index) => {
-    setIsOpen(isOpen === index ? false : index);
+  const Toggle = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <div className='collapse-list'>
-      {CollapseContent.map(({ id, title, content }, index) => (
-        <div key={id} className='collapse'>
-          <button className='collapse-header' onClick={() => handleToggle(index)}>{title}
-          <img
-              src={button}
-              alt="Toggle"
-              className={`collapse-icon ${isOpen ? 'closed' : 'open'}`} />
-            </button>
-          {isOpen === index && (
-            <div className='collapse-content'>
-              {Array.isArray(content) ? (
-                content.map((item, idx) => <p key={id}>{item}</p>)
-              ) : (
-                <p>{content}</p>
-              )}
-            </div>
+    <div className='collapse'>
+      <button className='titre-collapse' onClick={Toggle}>
+        <h2>{title}</h2>
+        <img src={isOpen ? collapsedown : collapseup} alt="Toggle" />
+      </button>
+      {isOpen && (
+        <div className='texte-collapse'>
+          {isList ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
           )}
         </div>
-      ))}
+      )}
     </div>
   );
 }
 
-export default CollapseList;
+export default Collapse;

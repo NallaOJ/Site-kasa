@@ -2,8 +2,7 @@ import React from 'react';
 import Slider from '../../components/Slider'
 import DetailsLogement from '../../components/DetailsLogement'
 import './logement.css'
-import { useParams } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import logementList from '../../Datas/logement.json'
 
 function Logement() {
@@ -11,14 +10,14 @@ function Logement() {
   const logement = logementList.find(logement => logement.id === id);
 
   if (!logement) {
-    return <div>Logement not found</div>;
+    return <Navigate to='/error/' />
   }
 
   return (
 <main>
     <div className='slider-container'>
     <Slider slides={logement.pictures} />
-    <DetailsLogement />
+    <DetailsLogement logement={logement} />
     </div>
     </main>
   )
