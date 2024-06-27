@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from '../../components/Slider'
 import DetailsLogement from '../../components/DetailsLogement'
-import './logement.css'
+import './logement.scss'
 import { useParams, Navigate } from 'react-router-dom';
 import logementList from '../../Datas/logement.json'
 
@@ -14,12 +14,10 @@ function Logement() {
   }
 
   return (
-<main>
     <div className='slider-container'>
     <Slider slides={logement.pictures} />
     <DetailsLogement logement={logement} />
     </div>
-    </main>
   )
 }
 

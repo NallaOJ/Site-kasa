@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import collapseup from '../../assets/collapseup.png';
 import collapsedown from '../../assets/collapsedown.png';
-import './collapse.css';
+import './collapse.scss';
 
 function Collapse({ title, content, isList }) {
   const [isOpen, setIsOpen] = useState(false);

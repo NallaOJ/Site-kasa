@@ -1,5 +1,5 @@
 .titre-collapse {
-  background-color: rgb(255, 96, 96, 1);
+  background-color: rgba(255, 96, 96, 1);
   border-radius: 5px;
   color: white;
   width: 100%;
@@ -11,26 +11,29 @@
   font-weight: bold;
   font-size: 18px;
   border: 0;
-  
 }
 
 .texte-collapse {
-  background-color: rgb(246, 246, 246, 0.45);
+  background-color: rgba(246, 246, 246, 0.45); 
   color: black;
   font-size: 18px;
   font-weight: 400;
-  padding-left:15px ;
+  padding-left: 15px;
   padding-right: 15px;
+
+  p {
+    padding-top: 10px;
+    margin: 0;
+  }
 }
 
 ul {
   list-style: none;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .collapse {
   width: 100%;
 }
-
-
-
-

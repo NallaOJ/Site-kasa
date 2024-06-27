@@ -1,7 +1,7 @@
 import React from 'react';
 import logements from '../../Datas/logement.json';
 import Card from '../../components/Card'
-import './cardlist.css'
+import './cardlist.scss'
 
 
 function CardList() {

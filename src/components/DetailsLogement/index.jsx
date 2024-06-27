@@ -1,5 +1,5 @@
 import React from 'react'
-import './detailsLogement.css'
+import './detailsLogement.scss'
 import Collapse from '../Collapse'
 import starActive from '../../assets/starActive.png'
 import starInactive from '../../assets/starInactive.png'

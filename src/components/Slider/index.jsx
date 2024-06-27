@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './slider.css'
+import './slider.scss'
 import prevButton from '../../assets/prevButton.png'
 import nextButton from '../../assets/nextButton.png'
 
