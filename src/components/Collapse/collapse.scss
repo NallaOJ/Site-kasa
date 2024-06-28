@@ -1,5 +1,9 @@
+$primary-color: rgba(255, 96, 96, 1);
+$secondary-color: rgba(246, 246, 246, 1);
+$footer-blackground: black;
+
 .titre-collapse {
-  background-color: rgba(255, 96, 96, 1);
+  background-color: $primary-color;
   border-radius: 5px;
   color: white;
   width: 100%;
@@ -14,14 +18,14 @@
 }
 
 .texte-collapse {
-  background-color: rgba(246, 246, 246, 0.45); 
-  color: black;
+  background-color: $secondary-color; 
+  color: $footer-blackground;
   font-size: 18px;
   font-weight: 400;
   padding-left: 15px;
   padding-right: 15px;
 
-  p {
+  & p {
     padding-top: 10px;
     margin: 0;
   }

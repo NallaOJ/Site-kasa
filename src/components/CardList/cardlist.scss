@@ -1,5 +1,7 @@
+$secondary-color: rgba(246, 246, 246, 1);
+
 .container-list {
-  background-color: rgba(246, 246, 246, 1);
+  background-color:$secondary-color;
   height: 100%;
   border-radius: 10px;
 }

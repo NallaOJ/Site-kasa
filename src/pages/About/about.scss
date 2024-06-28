@@ -22,14 +22,14 @@
   margin-right: 30px;
   margin-bottom: 30px;
   flex: 1; 
+
+  @media (max-width: 768px) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
 }
 
 
 
-@media (max-width: 768px) {
-  .about-collapse {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
 
