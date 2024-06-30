@@ -10,7 +10,7 @@ function Logement() {
   const logement = logementList.find(logement => logement.id === id);
 
   if (!logement) {
-    return <Navigate to='/error/' />
+    return <Navigate to='*' />
   }
 
   return (

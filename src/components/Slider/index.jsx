@@ -32,7 +32,7 @@ function Slider({ slides }) {
           ></img>
         ))}
       </div>
-{length > 1 && ( //Le compteur est conditionnellement rendu seulement si length > 1. Utilisation de <> </> pour grouper les éléments JSX conditionnels (les boutons et le compteur)
+{length > 1 && ( 
   <>
   <div className='slider-box-button'>
     <button className='prev-button' onClick={prevSlide}>

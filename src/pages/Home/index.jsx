@@ -15,7 +15,8 @@ const Home = () => {
      <section className='section-logment'>
       <ul className='logement-list'>
       {logementList.map((logement) => (
-        <li className='logement-home'><Link to={`/logement/${logement.id}`} key={logement.id}>
+        <li className='logement-home'  key={logement.id} >
+          <Link to={`/logement/${logement.id}`}>
       <Card pictures={logement.cover} title={logement.title} />
       </Link>
       </li>

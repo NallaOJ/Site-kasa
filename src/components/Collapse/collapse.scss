@@ -15,27 +15,40 @@ $footer-blackground: black;
   font-weight: bold;
   font-size: 18px;
   border: 0;
+  cursor: pointer; 
 }
 
 .texte-collapse {
-  background-color: $secondary-color; 
+  background-color: $secondary-color;
   color: $footer-blackground;
   font-size: 18px;
   font-weight: 400;
   padding-left: 15px;
   padding-right: 15px;
+  overflow: hidden; 
+  transition: max-height 0.5s ease; 
 
   & p {
     padding-top: 10px;
     margin: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease ; 
   }
-}
 
-ul {
-  list-style: none;
-  margin-top: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &.open {
+    max-height: 500px;
+
+    & p {
+      opacity: 1;
+    }
+  }
 }
 
 .collapse {
